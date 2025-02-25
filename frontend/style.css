@@ -1,0 +1,126 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: fit-content;
+    height: 60px;
+    max-width: 100%;
+    border-bottom: 2px solid rgb(237, 237, 237);
+    padding-bottom: 4px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: fit-content;
+    align-items: center;
+}
+
+h1 {
+    color: darkorange;
+    font-size: 32px;
+}
+
+.material-icons.nav {
+    padding: 8px;
+    color: darkorange;
+    border: 1px solid orange;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: fit-content;
+    height: 60px;
+    max-width: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 16px;
+    margin: 16px;
+    width: fit-content;
+    height: 40px;
+}
+
+.room-display {
+    justify-content: center;
+    margin: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw - 32px;
+    gap: 0.8vw;
+}
+
+.room-card {
+    width: 18vw;
+    height: 36vh;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+.room-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.room-card p {
+    width: 85%;
+    justify-content: left;
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    margin-top: 100%;
+    background-color: darkorange;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 10;
+    font-size: 12px;
+}
+
+.available {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 50%;
+    background-color: white;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.room-card h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.material-icons.card {
+    color: green;
+    font-size: 10px;
+    margin-right: 12px;
+}

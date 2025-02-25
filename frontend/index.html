@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freerooms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="title">
+        <div class="group">
+            <img class="logo" src="assets/freeRoomsLogo.png" style="width: 48px; height: 48px; padding-right: 10px;" onclick="changeImage()">
+            <h1>Freerooms</h1>
+        </div>
+        <div class="group">
+            <span class="material-icons nav">
+                search
+            </span>
+            <span class="material-icons nav" style="color: white; background-color: darkorange;">
+                grid_view
+            </span>
+            <span class="material-icons nav">
+                map
+            </span>
+            <span class="material-icons nav">
+                dark_mode
+            </span>
+        </div>
+    </div>
+    <script>
+        function changeImage() {
+            const img = document.getElementsByClassName("logo")[0];
+            if (img.src.includes("freeRoomsLogo.png")) {
+                img.src = "assets/freeroomsDoorClosed.png";
+            } else {
+                img.src = "assets/freeRoomsLogo.png";
+            }
+        }
+    </script>
+    <div class="search">
+        <div class="button" style="color: darkorange; border: 2px solid darkorange;">
+            <span class="material-icons" style="color: darkorange; font-size: 24px; margin-right: 12px;">
+                filter_alt
+            </span>
+            <h2 style="font-size: 16px; font-weight: bold;">Filters</h2>
+        </div>
+        <div class="button" style="color: gray; border: 2px solid lightgray; justify-content: left; width: 50%;">
+            <span class="material-icons" style="color: gray; font-size: 24px; margin-right: 12px;">
+                search
+            </span>
+            <h2 style="font-size: 16px; font-weight: normal;">Search for a building...</h2>
+        </div>
+        <div class="button" style="color: darkorange; border: 2px solid darkorange;">
+            <span class="material-icons" style="color: darkorange; font-size: 24px; margin-right: 12px;">
+                filter_list
+            </span>
+            <h2 style="font-size: 16px; font-weight: bold;">Sort</h2>
+        </div>
+    </div>
+    <div class="room-display">
+        <div class="room-card">
+            <img src="assets/agsm.webp">
+            <p>AGSM</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>9 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/ainsworth.webp">
+            <p>Ainsworth Building</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>12 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/anitab.webp">
+            <p>Anita B Lawrence Centre</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>12 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/biologicalScience.webp">
+            <p>Biological Sciences</p>
+            <div class="available">
+                <span class="material-icons card" style="color: red;">
+                    circle
+                </span>
+                <h1>0 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/biologicalScienceWest.webp">
+            <p>Biological Sciences (West)</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>0 rooms available</h1>
+            </div>
+        </div>
+    </div>
+    <div class="room-display">
+        <div class="room-card">
+            <img src="assets/blockhouse.webp">
+            <p>Blockhouse</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>41 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/businessSchool.webp">
+            <p>Business School</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>3 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/civilBuilding.webp">
+            <p>Civil Engineering Building</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>69 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/colombo.webp">
+            <p>Colombo Building</p>
+            <div class="available">
+                <span class="material-icons card" style="color: red;">
+                    circle
+                </span>
+                <h1>0 rooms available</h1>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="assets/cseBuilding.webp">
+            <p>Computer Science & Eng (K17)</p>
+            <div class="available">
+                <span class="material-icons card">
+                    circle
+                </span>
+                <h1>8 rooms available</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
